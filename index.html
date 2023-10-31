@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/db9c392b13.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fisheye</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Logo Fisheye" tabindex="1" aria-label="Retour sur la page d'accueil"/>
+      </a>
+      <h1 >Nos photographes</h1>
+    </header>
+    <main id="main">
+      <section class="photographer_section" >
+        <!-- Contenu de la section photographe -->
+      </section>
+    </main>
+    <script src="scripts/Model.js"></script>
+    <script src="scripts/views/ListPhotographersView.js"></script>
+    <script src="scripts/Controller.js"></script>
+    <script>
+      let controller = new Controller();
+      controller.initListPhotographerPage();
+    </script>
+  </body>
+</html>
